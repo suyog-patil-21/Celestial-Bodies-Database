@@ -66,3 +66,20 @@ trap '__vsc_preexec_all "$_"' DEBUG
 __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 psql -U postgres < universe.sql
 psql --username=freecodecamp --dbname=postgres
+clear
+git status
+__vsc_prompt_cmd_original
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git status
+git remote set-url origin https://github.com/suyog-patil-21/Celestial-Bodies-Database.git
+git remote -v
+git add .
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git status
+git add .
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git statu
+git status
+git add .
+git status
+git add .
